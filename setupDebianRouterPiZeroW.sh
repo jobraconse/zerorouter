@@ -72,11 +72,11 @@ echo ""
 SSID=$SSID
 PASSPHRASE=$PASSPHRASE
 
-if [[ -z "$1" ]]; then
-	echo "[+] Installing needed packages..."
-	apt update
-	apt install -y hostapd dnsmasq iptables-persistent dhcpcd vim git
-fi
+
+echo "[+] Installing needed packages..."
+apt update
+apt install -y hostapd dnsmasq iptables-persistent dhcpcd vim git
+
 
 echo "[+] Stop services for configuration..."
 systemctl stop hostapd
