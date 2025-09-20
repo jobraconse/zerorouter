@@ -75,7 +75,7 @@ PASSPHRASE=$PASSPHRASE
 if [[ -z "$1" ]]; then
 	echo "[+] Installing needed packages..."
 	apt update
-	apt install -y hostapd dnsmasq iptables-persistent dhcpcd
+	apt install -y hostapd dnsmasq iptables-persistent dhcpcd vim git
 fi
 
 echo "[+] Stop services for configuration..."
